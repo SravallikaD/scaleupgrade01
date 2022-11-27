@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins",sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: url(images/zouimg.jpeg)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    position:relative;
+    top: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    position: relative;
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+}
+.nav a{
+    color: black;
+    background:rgb(223, 223, 222);
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+}
+.nav a:not(:last-child){
+    margin-right: 30px;
+}
+.nav a:hover{
+    background-color:rgb(223, 223, 222);
+}
+.media-icons{
+    display:flex;
+    float: left;
+    flex-direction: column;
+    justify-content:space-between;
+    margin: auto;
+}
+.media-icons a{
+    position:relative;
+    color: #111;
+    padding-left: 15px;
+    margin: 15px;
+    font-size: 25px;
+    
+    transition: 0.3s;
+    transition-property: transform;
+}
+.media-icons a:not(:last-child){
+    margin-right: 60px;
+}
+.media-icons a:hover{
+transform: scale(1.5);
+}

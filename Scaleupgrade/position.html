@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .box{
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            margin: 2px;
+            align-items: center;
+
+        }
+        #id1{
+            position: relative;
+            top: 20px;
+            right: 10px;
+            left: 15px;
+        }
+        #id2{
+            position:absolute;
+            top: 30px;
+            left: 25px;
+        }
+        #id3{
+            position: sticky;
+        }
+        #id4{
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="id1">1</div>
+    <div class="box" id="id2">2</div>
+    <div class="box" id="id3">3</div>
+    <div class="box" id="id4">4</div>
+</body>
+</html>
